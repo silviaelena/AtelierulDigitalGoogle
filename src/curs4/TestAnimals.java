@@ -28,6 +28,7 @@ public class TestAnimals {
 
         System.out.println(p.getName());
         p.setName("tomitaaa");
+        System.out.println(p.getName());
         System.out.println();
 
     }
