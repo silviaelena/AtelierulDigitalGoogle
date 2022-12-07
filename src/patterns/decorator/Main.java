@@ -2,6 +2,7 @@ package patterns.decorator;
 
 public class Main {
     public static void main(String[] args) {
+        int array[];
         // Small change here
         Beverage coffee = new Coffee();
         Topping milk = new Milk(coffee);
