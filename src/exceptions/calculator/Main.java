@@ -3,6 +3,15 @@ package exceptions.calculator;
 public class Main {
     public static void main(String[] args) throws NumberTooHighException {
         ComplexCalculator cc = new ComplexCalculator();
-        cc.complexOperation(6);
+        try {
+            cc.complexOperation(6);
+            cc.complexOperation(0);
+        } catch (NumberTooHighException e) {
+            e.printStackTrace();
+        }
+
+        cc.complexOperation(0);
+
+        System.out.println("END!");
     }
 }
