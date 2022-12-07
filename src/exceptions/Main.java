@@ -20,5 +20,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(new Main().test(5));
+        System.out.println("test");
     }
 }
