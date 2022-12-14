@@ -19,11 +19,14 @@ public class Main {
     public static void main(String[] args) {
         List a = getList();
         Iterator<String> it = a.iterator();
+        String currentString;
 
         while(it.hasNext()) {
-            if (it.next() == "Third") {
+            currentString = it.next();
+            if (currentString == "Third") {
                 it.remove();
 //                a.remove(2);
+//                it.remove();
             }
         }
 
