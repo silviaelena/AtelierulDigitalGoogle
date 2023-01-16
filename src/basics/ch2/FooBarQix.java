@@ -1,4 +1,4 @@
-package ch2;
+package basics.ch2;
 
 public class FooBarQix {
     public static String compute(int number) {
