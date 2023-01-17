@@ -1,4 +1,4 @@
-package phonebook;
+package exceptions.phonebook;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,7 +10,7 @@ public class Main {
         boolean foundUsers = false;
 
         try {
-            reader = new BufferedReader(new FileReader("/Users/silvianistor/IdeaProjects/AtelierulDigitalGoogle/src/phonebook/phonebook.txt"));
+            reader = new BufferedReader(new FileReader("/Users/silvianistor/IdeaProjects/AtelierulDigitalGoogle/src/exceptions.phonebook/exceptions.phonebook.txt"));
             String line = reader.readLine();
             while (line != null && !foundUsers) {
                 String[] tokens = line.split(" ");
