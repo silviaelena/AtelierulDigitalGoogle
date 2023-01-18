@@ -1,0 +1,9 @@
+To use Singleton pattern, ThreadPool class is implemented as a singleton, to simulate the behaviour of a threadpool for
+a multithreading approach. The constructor is private, so that no other instances of the class can be created. The
+getInstance() method returns the singleton instance, creating it if it does not already exist.
+
+The reason why Singleton is suitable in this use case is related to the design of ThreadPool as a concept. We want a
+single instance that manages all threads and we have to make sure all those threads are referring to a single thread pool.
+
+In the implementation, an ExecutorService is used to create a thread pool with 10 reusable threads available. We then
+feed the ThreadPool with Runnable tasks that print the current time and do some busy waiting.
