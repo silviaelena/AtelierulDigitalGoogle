@@ -1,0 +1,14 @@
+A file system explorer gives us the possibility of displaying different types of properties for different types of files.
+We bear in mind that in Linux, everything is a file, so this is the base class. Every other type of file will derive from
+the base File class. The Visitor pattern allows us to add different types of Files without making changes difficult to
+maintain. All we need to do is add functions for visiting and visitable for the newly added object.
+
+As a basic use case, we are going to consider some txt files, image files and directories. Of course, we can add multiple
+types of files in the future without much trouble.
+
+For implementing this design pattern we are going to add the operation we want to apply as a Visitor argument, in our
+case, FileVisitor: void accept(FileVisitor visitor). This way, we will be able to process the display operation on different
+variations of File elements.
+
+If we wish to add more types of files, one should only add another visit method in FileVisitor and implement it accordingly.
+
