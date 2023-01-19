@@ -1,0 +1,3 @@
+Putem aplica pattern-ul Builder si pentru a crea imagini cu diferite setari / edit-uri.
+Ne definim proprietatile de baza ale unei imagini si apoi continuam sa definim diferite "componente" care reprezinta
+moduri in care putem crea imagini noi, derivate din cea de baza.
